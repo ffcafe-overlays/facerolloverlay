@@ -1,0 +1,64 @@
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="faceroll_parse.css"/>
+    <script src="faceroll_parse.js"></script>
+    <script src="faceroll_config.ini"></script>
+</head>
+<body>
+<div id="table_box">
+    <div id="encounter">
+        <div class="colorBlue">没有战斗记录啦╮(╯_╰)╭.</div>
+        <div class="symbol colorYellow">
+            <span id="toggle7" onclick="toggleDmg()">~</span>
+            <span id="toggle5" onclick="toggleRole()">i</span>
+            <span id="toggle4" onclick="toggleFarce()">®</span>
+            <span id="toggle3" onclick="toggleName()">®</span>
+            <span id="toggle2" onclick="toggleDps()">q</span>
+            <span id="toggle1" onclick="toggleOp()">2</span>
+        </div>
+    </div>
+    <table id="combatantTable">
+
+    </table>
+</div>
+</body>
+<script>
+    var toggleIcon;
+    if (dmgMode == 1) {
+        toggleIcon = document.getElementById('toggle7');
+        toggleIcon.classList.add('tggoleDisplay');
+    }
+    if (maskMode == 1) {
+        toggleIcon = document.getElementById('toggle4');
+        toggleIcon.classList.add('tggoleDisplay');
+    } else if (maskMode == 2) {
+        toggleIcon = document.getElementById('toggle3');
+        toggleIcon.classList.add('tggoleDisplay');
+    } else {
+        toggleIcon = document.getElementById('toggle4');
+        toggleIcon.classList.add('tggoleDisplay');
+        toggleIcon = document.getElementById('toggle3');
+        toggleIcon.classList.add('tggoleDisplay');
+    }
+    if (filterkMode == 1) {
+        toggleIcon = document.getElementById('toggle5');
+        toggleIcon.classList.add('tggoleDisplay');
+    }
+    if (dpsMode == 1) {
+        toggleIcon = document.getElementById('toggle2');
+        toggleIcon.classList.add('tggoleDisplay');
+    }
+    if (opMode == 1) {
+        toggleIcon = document.getElementById('toggle1');
+        toggleIcon.classList.add('tggoleDisplay');
+    }
+
+    if (boxAlpha > 0 && boxAlpha <= 100) {
+        var box = document.getElementById('table_box');
+        box.style.backgroundColor = "rgba(0,0,0," + (boxAlpha / 100) + ")";
+        box.style.boxShadow = "rgba(0,0,0," + (boxAlpha / 100) + ") 0px 0px 7px 4px";
+    }
+</script>
+</html>
