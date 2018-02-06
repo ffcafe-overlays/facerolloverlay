@@ -2,13 +2,13 @@
 
 OverlayPlugin插件用Faceroll模版自行修改版。
 
-路径：http://jeremiahs.coding.me/OverlayPlugin_Faceroll_Modified/
+路径：http://jeremiahshi.gitee.io/act.overlayplugin.template.faceroll.modifed
 
 原作者：[Mandock Saber](https://twitter.com/mandock_saber)
 
-当前版本：1.8
+当前版本：1.95
 
-现作者：Jeremiah'\u271e'S
+现作者：Jeremiah✞S
 
 游戏：紫水栈桥
 

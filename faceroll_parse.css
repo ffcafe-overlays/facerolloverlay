@@ -131,7 +131,7 @@ border-radius: 10px;
 .cellHeaderTop {
     position: absolute;
     margin-top: 18px;
-    right: 0px;
+    right: 12px;
 }
 
 .cellHeaderMiddle {
@@ -252,20 +252,20 @@ border-radius: 10px;
 
 .dps {
     margin-right: 5px;
-    margin-top: -22px;
+    margin-top: -20px;
     font-size: 18px;
 }
 
 .dpsSub {
     margin-right: 5px;
-    margin-top: -22px;
+    margin-top: -20px;
     font-size: 18px;
 }
 
 .bar {
     position: absolute;
     display: block;
-    margin-top: -1px;
+    margin-top: 3px;
     height: 10px;
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -273,7 +273,7 @@ border-radius: 10px;
 
 .ex {
     position: absolute;
-    margin-top: -4px;
+    margin-top: 1px;
     font-size: 9px;
     margin-left: 0px;
 }
@@ -282,14 +282,14 @@ border-radius: 10px;
     position: absolute;
     /* width: 72px; */
     font-size: 9px;
-    top: -3px;
+    top: -2px;
     right: 95px;
 }
 
 .nameOpTop2 {
     position: absolute;
     font-size: 9px;
-    top: -3px;
+    top: -2px;
     right: 141px;
 }
 
@@ -297,13 +297,21 @@ border-radius: 10px;
     position: absolute;
     width: 72px;
     font-size: 9px;
-    top: 7px;
+    top: 8px;
     right: 59px;
+}
+
+.nameOpUnder2 {
+    position: absolute;
+    width: 72px;
+    font-size: 9px;
+    top: 8px;
+    right: 105px;
 }
 
 .cellOp {
     font-size: 10px;
-    margin-left: 8px;
+    /*margin-left: 8px;*/
 }
 
 .cellOpTop {
