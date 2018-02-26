@@ -233,7 +233,7 @@ border-radius: 10px;
 
 .cell {
     position: relative;
-    height: 32px;
+    height: 30px;
 }
 
 .you {
@@ -252,20 +252,20 @@ border-radius: 10px;
 
 .dps {
     margin-right: 5px;
-    margin-top: -20px;
+    margin-top: -17px;
     font-size: 18px;
 }
 
 .dpsSub {
     margin-right: 5px;
-    margin-top: -20px;
+    margin-top: -22px;
     font-size: 18px;
 }
 
 .bar {
     position: absolute;
     display: block;
-    margin-top: 4px;
+    margin-top: 3px;
     height: 10px;
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -297,7 +297,7 @@ border-radius: 10px;
     position: absolute;
     width: 72px;
     font-size: 9px;
-    top: 8px;
+    top: 9px;
     right: 59px;
 }
 
@@ -305,13 +305,14 @@ border-radius: 10px;
     position: absolute;
     width: 72px;
     font-size: 9px;
-    top: 8px;
+    top: 9px;
     right: 105px;
 }
 
 .cellOp {
     font-size: 10px;
-    /*margin-left: 8px;*/
+    margin-left: 8px;
+    left: -6px;
 }
 
 .cellOpTop {
@@ -322,8 +323,12 @@ border-radius: 10px;
     margin-top: -27px;
 }
 
-.cellOpUnder, .cellOpUnderSub {
-    margin-top: 1px;
+.cellOpUnder {
+    margin-top: -5px;
+}
+
+.cellOpUnderSub{
+    margin-top: 0px;
 }
 
 .numMissDeath {

@@ -772,23 +772,18 @@ function writeNameCell(combatant, isActive, index, dpsav, duration) {
     var opTop = document.createElement('div');
     var opUnder = document.createElement('div');
     var opTop2 = document.createElement('div');
-    var opUnder2 = document.createElement('div');
     opTop.classList.add('nameOpTop');
     opTop2.classList.add('nameOpTop2');
     opUnder.classList.add('nameOpUnder');
-    opUnder2.classList.add('nameOpUnder2');
     opTop.classList.add('opClasses');
     opTop.classList.add('opClasses');
     opUnder.classList.add('opClasses');
-    opUnder2.classList.add('opClasses');
     var opItem1 = document.createElement('span');
     var opValue1 = document.createElement('span');
     var opItem2 = document.createElement('span');
     var opValue2 = document.createElement('span');
     var opItem3 = document.createElement('span');
     var opValue3 = document.createElement('span');
-    var opItem4 = document.createElement('span');
-    var opValue4 = document.createElement('span');
     opItem1.classList.add('colorYellow');
     opValue1.classList.add('num');
     opValue1.classList.add('colorRed');
@@ -798,9 +793,6 @@ function writeNameCell(combatant, isActive, index, dpsav, duration) {
     opItem3.classList.add('colorYellow');
     opValue3.classList.add('num');
     opValue3.classList.add('colorRed');
-    opItem4.classList.add('colorYellow');
-    opValue4.classList.add('num');
-    opValue4.classList.add('colorRed');
 
     var ohPercent = document.createElement('span');
     ohPercent.classList.add('percent');
@@ -821,29 +813,14 @@ function writeNameCell(combatant, isActive, index, dpsav, duration) {
         opValue1.innerHTML = parseInt(combatant.OverHealPct.slice(0, -1));
         opTop.appendChild(ohPercent);
     }
-
     else if (healerRole.indexOf(combatant.exJob) === -1 && parseFloat(combatant.enchps) > 0.00) {
         opItem1.innerHTML = "自救:";
         opValue1.innerHTML = parseInt(combatant.enchps) - parseInt(parseInt(combatant.enchps) * (parseInt(combatant.OverHealPct.slice(0, -1)) / 100));
         opValue1.innerHTML = opValue1.innerHTML + "&nbsp;";
     }
-
-    if (combatant.deaths > 0 && parseInt(combatant.misses) === 0) {
-        opItem2.innerHTML = "阵亡:";
-        opValue2.innerHTML = combatant.deaths + "&nbsp;";
-    }
-
-    else if (combatant.deaths > 0 && parseInt(combatant.misses) > 0) {
-        opItem4.innerHTML = '击空:';
-        opValue4.innerHTML = combatant.misses + "&nbsp;";
+    if (combatant.deaths > 0) {
         opItem2.innerHTML = "阵亡:";
         opValue2.innerHTML = combatant.deaths;
-        opUnder.appendChild(spaceChar);
-    }
-
-    else if (parseInt(combatant.deaths) === 0 && parseInt(combatant.misses) > 0) {
-        opItem4.innerHTML = '击空:';
-        opValue4.innerHTML = combatant.misses + "&nbsp;"
     }
 
     opTop2.appendChild(opItem3);
@@ -851,8 +828,6 @@ function writeNameCell(combatant, isActive, index, dpsav, duration) {
     opTop.appendChild(spaceChar);
     opTop.appendChild(opItem1);
     opTop.appendChild(opValue1);
-    opUnder2.appendChild(opItem4);
-    opUnder2.appendChild(opValue4);
     opUnder.appendChild(opItem2);
     opUnder.appendChild(opValue2);
 
@@ -872,7 +847,6 @@ function writeNameCell(combatant, isActive, index, dpsav, duration) {
     cell.appendChild(ex);
     cell.appendChild(opTop2);
     cell.appendChild(opTop);
-    cell.appendChild(opUnder2);
     cell.appendChild(opUnder);
     return cell;
 }
@@ -946,21 +920,21 @@ function writeOpCell(combatant) {
     underValueSub.classList.add('num');
     topValueSub.classList.add('colorBlue');
     underValueSub.classList.add('colorBlue');
-    // topValueSub.classList.add('floatRight');
-    // underValueSub.classList.add('floatRight');
+    topValueSub.classList.add('floatRight');
+    underValueSub.classList.add('floatRight');
 
     // クリティカルの％
     var criPercent = document.createElement('span');
     criPercent.classList.add('percent');
     criPercent.classList.add('colorYellow');
-    // criPercent.classList.add('floatRight');
+    criPercent.classList.add('floatRight');
     criPercent.innerText = "%";
     underValueSub.appendChild(criPercent);
 
     var driPercent = document.createElement('span');
     driPercent.classList.add('percent');
     driPercent.classList.add('colorYellow');
-    // driPercent.classList.add('floatRight');
+    driPercent.classList.add('floatRight');
     driPercent.innerText = "%";
     topValueSub.appendChild(driPercent);
 
