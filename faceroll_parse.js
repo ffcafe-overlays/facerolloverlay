@@ -929,8 +929,8 @@ function writeOpCell(combatant) {
     // 子项
     var topSub = document.createElement('div');
     var underSub = document.createElement('div');
-    topSub.innerText = "直击";
-    underSub.innerText = "暴击";
+    topSub.innerText = "直击:";
+    underSub.innerText = "暴击:";
     topSub.classList.add('cellOpTopSub');
     underSub.classList.add('cellOpUnderSub');
     topSub.classList.add('opClasses');

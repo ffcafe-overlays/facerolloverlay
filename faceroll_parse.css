@@ -233,7 +233,7 @@ border-radius: 10px;
 
 .cell {
     position: relative;
-    height: 30px;
+    height: 32px;
 }
 
 .you {
@@ -265,7 +265,7 @@ border-radius: 10px;
 .bar {
     position: absolute;
     display: block;
-    margin-top: 3px;
+    margin-top: 4px;
     height: 10px;
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -319,11 +319,11 @@ border-radius: 10px;
 }
 
 .cellOpTopSub {
-    margin-top: -25px;
+    margin-top: -27px;
 }
 
 .cellOpUnder, .cellOpUnderSub {
-    margin-top: -2px;
+    margin-top: 1px;
 }
 
 .numMissDeath {
