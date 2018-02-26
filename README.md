@@ -6,8 +6,6 @@ OverlayPlugin插件用Faceroll模版自行修改版。
 
 原作者：[Mandock Saber](https://twitter.com/mandock_saber)
 
-当前版本：1.95
-
 现作者：Jeremiah✞S
 
 游戏：紫水栈桥
