@@ -6,7 +6,7 @@ OverlayPlugin插件用Faceroll模版自行修改版。
 
 原作者：[Mandock Saber](https://twitter.com/mandock_saber)
 
-现作者：Jeremiah✞S
+现作者：Yorushika
 
 游戏：紫水栈桥
 
