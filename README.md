@@ -1,4 +1,4 @@
-# ACT.OverlayPlugin: Faceroll_Modified Template
+# ACT.OverlayPlugin: Faceroll_Modified Overlay
 
 OverlayPlugin插件用Faceroll模版自行修改版。
 
