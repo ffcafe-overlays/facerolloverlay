@@ -2,7 +2,7 @@
 
 OverlayPlugin插件用Faceroll模版自行修改版。
 
-路径：https://yorushika.gitlab.io/faceroll/
+路径：https://yorushika.gitlab.io/ACT.OverlayPlugin.Template.Faceroll.Modifed/
 
 原作者：[Mandock Saber](https://twitter.com/mandock_saber)
 
