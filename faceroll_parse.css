@@ -252,7 +252,7 @@ border-radius: 10px;
 
 .dps {
     margin-right: 5px;
-    margin-top: -17px;
+    margin-top: -22px;
     font-size: 18px;
 }
 
@@ -265,7 +265,7 @@ border-radius: 10px;
 .bar {
     position: absolute;
     display: block;
-    margin-top: 3px;
+    margin-top: 1px;
     height: 10px;
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -273,7 +273,7 @@ border-radius: 10px;
 
 .ex {
     position: absolute;
-    margin-top: 1px;
+    margin-top: -3px;
     font-size: 9px;
     margin-left: 0px;
 }
@@ -282,14 +282,14 @@ border-radius: 10px;
     position: absolute;
     /* width: 72px; */
     font-size: 9px;
-    top: -2px;
+    top: -3px;
     right: 95px;
 }
 
 .nameOpTop2 {
     position: absolute;
     font-size: 9px;
-    top: -2px;
+    top: -3px;
     right: 141px;
 }
 
@@ -297,7 +297,7 @@ border-radius: 10px;
     position: absolute;
     width: 72px;
     font-size: 9px;
-    top: 9px;
+    top: 8px;
     right: 59px;
 }
 
@@ -305,31 +305,31 @@ border-radius: 10px;
     position: absolute;
     width: 72px;
     font-size: 9px;
-    top: 9px;
+    top: 8px;
     right: 105px;
 }
 
 .cellOp {
     font-size: 10px;
     margin-left: 8px;
-    left: -6px;
-    top: 5px;
+    left: -7px;
+    top: 2px;
 }
 
 .cellOpTop {
-    margin-top: 5px;
+    margin-top: -32px;
 }
 
 .cellOpTopSub {
-    margin-top: -27px;
+    margin-top: -32px;
 }
 
 .cellOpUnder {
-    margin-top: -5px;
+    margin-top: -3px;
 }
 
-.cellOpUnderSub{
-    margin-top: 0px;
+.cellOpUnderSub {
+    margin-top: -1px;
 }
 
 .numMissDeath {

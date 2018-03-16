@@ -2,14 +2,9 @@
 
 OverlayPlugin插件用Faceroll模版自行修改版。
 
-路径：http://yorushika.gitee.io/act.overlayplugin.template.faceroll.modifed
+路径：https://yorushika.gitlab.io/faceroll/
 
 原作者：[Mandock Saber](https://twitter.com/mandock_saber)
 
-现作者：Yorushika
+现作者：[Yorushika](mailto:jeremiahshi@outlook.com)
 
-游戏：紫水栈桥
-
-Wire：@js64
-
-QQ与微信即将弃用
