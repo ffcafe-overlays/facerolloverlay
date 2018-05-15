@@ -476,7 +476,7 @@ function writeHeaderCell(encounter, isActive) {
     cellBottomSub.id = "headerDpsSub";
     cellBottomSub.classList.add('cellHeaderBottomSub');
     cellBottomSub.classList.add('colorYellow');
-    cellBottomSub.classList.add('tggoleVisible');
+    cellBottomSub.classList.add('toggleVisible');
 
     var cellBottomSubItem1 = document.createElement('span');
     cellBottomSubItem1.innerText = "DRA:";
@@ -570,7 +570,7 @@ function writeNameCell(combatant, isActive, index, dpsav, duration) {
     nameSub.innerText = combatant.exNameFarce;
     nameSub.classList.add('nameSub');
     nameSub.classList.add('colorBlue');
-    nameSub.classList.add('tggoleVisible');
+    nameSub.classList.add('toggleVisible');
 
     // YOUの色を変更
     if (combatant.exName == "YOU") {
@@ -598,7 +598,7 @@ function writeNameCell(combatant, isActive, index, dpsav, duration) {
     dpsSub.classList.add('floatRight');
     dpsSub.classList.add('num');
     dpsSub.classList.add('colorBlue');
-    dpsSub.classList.add('tggoleVisible');
+    dpsSub.classList.add('toggleVisible');
 
     // ペット合算表示
     if (ownerPlus[combatant.name] == "flag" || ownerPlusL60[combatant.name] == "flag") {
@@ -833,8 +833,8 @@ function writeNameCell(combatant, isActive, index, dpsav, duration) {
 
 
     if (opItem == 1) {
-        opTop.classList.add('tggoleVisible');
-        opUnder.classList.add('tggoleVisible');
+        opTop.classList.add('toggleVisible');
+        opUnder.classList.add('toggleVisible');
     }
 
     // 結合
@@ -939,11 +939,11 @@ function writeOpCell(combatant) {
     topValueSub.appendChild(driPercent);
 
     if (opItem == 1) {
-        topSub.classList.add('tggoleVisible');
-        underSub.classList.add('tggoleVisible');
+        topSub.classList.add('toggleVisible');
+        underSub.classList.add('toggleVisible');
     } else {
-        top.classList.add('tggoleVisible');
-        under.classList.add('tggoleVisible');
+        top.classList.add('toggleVisible');
+        under.classList.add('toggleVisible');
     }
 
     // 結合
@@ -1017,7 +1017,7 @@ function toggleOp() {
 
     var value = document.getElementsByClassName('opClasses');
     for (var i = 0, j = value.length; i < j; i++) {
-        value[i].classList.toggle('tggoleVisible');
+        value[i].classList.toggle('toggleVisible');
     }
 
     var toggleIcon = document.getElementById('toggle1');
@@ -1031,8 +1031,8 @@ function toggleDps() {
     var value = document.getElementById('headerDps');
     if (value !== null) {
         var valueSub = document.getElementById('headerDpsSub');
-        value.classList.toggle('tggoleVisible');
-        valueSub.classList.toggle('tggoleVisible');
+        value.classList.toggle('toggleVisible');
+        valueSub.classList.toggle('toggleVisible');
     }
 
     var toggleIcon = document.getElementById('toggle2');
@@ -1047,8 +1047,8 @@ function toggleDmg() {
     var valueDpsSub = document.getElementsByClassName('DpsSub');
 
     for (var i = 0, j = valueDps.length; i < j; i++) {
-        // valueDps[i].classList.toggle('tggoleVisible');
-        // valueDpsSub[i].classList.toggle('tggoleVisible');
+        // valueDps[i].classList.toggle('toggleVisible');
+        // valueDpsSub[i].classList.toggle('toggleVisible');
         var bcp = valueDps[i].innerHTML;
         valueDps[i].innerHTML = valueDpsSub[i].innerHTML;
         valueDpsSub[i].innerHTML = bcp;
@@ -1066,9 +1066,9 @@ function toggleName() {
     var valueNameSub = document.getElementsByClassName('nameSub');
     var valueNameYou = document.getElementsByClassName('name you');
     for (var i = 0, j = valueName.length; i < j; i++) {
-        valueName[i].classList.toggle('tggoleVisible');
+        valueName[i].classList.toggle('toggleVisible');
     }
-    valueNameYou[0].classList.remove('tggoleVisible');
+    valueNameYou[0].classList.remove('toggleVisible');
 
     var toggleIcon = document.getElementById('toggle3');
     toggleIcon.classList.toggle('colorGreen');
@@ -1081,8 +1081,8 @@ function toggleFarce() {
     var valueName = document.getElementsByClassName('name');
     var valueNameSub = document.getElementsByClassName('nameSub');
     for (var i = 0, j = valueName.length; i < j; i++) {
-        valueName[i].classList.toggle('tggoleVisible');
-        valueNameSub[i].classList.toggle('tggoleVisible');
+        valueName[i].classList.toggle('toggleVisible');
+        valueNameSub[i].classList.toggle('toggleVisible');
     }
 
     var toggleIcon = document.getElementById('toggle4');
@@ -1096,12 +1096,12 @@ function toggleRole() {
     var valueRole = document.getElementsByClassName('dpsBlock');
     if (valueRole[1] !== undefined) {
         for (var i = 1, j = valueRole.length; i < j; i++) {
-            valueRole[i].classList.toggle('tggoleDisplay');
+            valueRole[i].classList.toggle('toggleDisplay');
         }
     }
     var valueYou = document.getElementById('youTag');
     if (valueYou !== null) {
-        valueYou.classList.remove('tggoleDisplay');
+        valueYou.classList.remove('toggleDisplay');
     }
 
     var toggleIcon = document.getElementById('toggle5');

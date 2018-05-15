@@ -17,4 +17,3 @@ Ordinary Author：[Mandock Saber](https://twitter.com/mandock_saber)
 现作者：[Yorushika](mailto:jeremiahshi@outlook.com)
 
 Current Author：[Yorushika](mailto:jeremiahshi@outlook.com)
-

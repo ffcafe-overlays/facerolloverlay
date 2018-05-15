@@ -354,13 +354,10 @@ border-radius: 10px;
     font-size: 10px;
 }
 
-.tggoleVisible {
+.toggleVisible {
     visibility: hidden;
 }
 
-.tggoleDisplay {
+.toggleDisplay {
     display: none;
-}
-
-.tankBlock, .healerBlock, .dpsBlock, .opClasses {
 }
