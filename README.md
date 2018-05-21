@@ -4,9 +4,9 @@ OverlayPlugin插件用Faceroll模版自行修改版。
 
 Faceroll overlay for OverlayPlugin of Advanced Combat Tracker. Modified for better supporting of Patch 4.0.
 
-加载路径：https://yorushika.github.io/facerolloverlay/
+加载路径：https://yorushika.github.io/ffxiv/faceroll/
 
-Loading URL: https://yorushika.github.io/facerolloverlay/
+Loading URL: https://yorushika.github.io/ffxiv/faceroll/
 
 ---
 
