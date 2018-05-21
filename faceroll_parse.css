@@ -317,11 +317,11 @@ border-radius: 10px;
 }
 
 .cellOpTop {
-    margin-top: 4px;
+    margin-top: -32px;
 }
 
 .cellOpTopSub {
-    margin-top: -32px;
+    margin-top: 4px;
 }
 
 .cellOpUnder {
