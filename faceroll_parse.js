@@ -2,8 +2,8 @@
 　　　　　　　各種定義
 =============================*/
 var tankRole = ["Gla", "Pld", "Mrd", "War", "Drk"];
-var dpsRole = ["Pgl", "Mnk", "Lnc", "Drg", "Arc", "Brd", "Rog", "Nin", "Mch", "Acn", "Smn", "Thm", "Blm", "Sam", "Rdm"];
-var healerRole = ["Cnj", "Whm", "Sch", "Eos", "Sle", "Ast"];
+var dpsRole = ["Pgl", "Mnk", "Lnc", "Drg", "Arc", "Brd", "Rog", "Nin", "Mch", "Acn", "Smn", "Thm", "Blm", "Sam", "Rdm", "Rpr"];
+var healerRole = ["Cnj", "Whm", "Sch", "Eos", "Sle", "Ast", "Sge"];
 var petRole = ["Cho", "Gar", "Ifr", "Tit", "Eos", "Sle", "Eme", "Tpz", "Atr", "Atb"];
 
 var farce = [];
